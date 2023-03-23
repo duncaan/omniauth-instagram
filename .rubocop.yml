@@ -1,7 +1,7 @@
 inherit_from:
   - https://raw.githubusercontent.com/tmilewski/rubocop-defaults/master/rubocop.yml
 
-Style/FileName:
+Naming/FileName:
   Enabled: false
 
 AllCops:

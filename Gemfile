@@ -4,6 +4,8 @@ gem 'rake'
 
 group :development do
   gem 'rubocop', '>= 0.48.1'
+  gem 'rubocop-rails'
+  gem 'panolint'
 end
 
 group :test do

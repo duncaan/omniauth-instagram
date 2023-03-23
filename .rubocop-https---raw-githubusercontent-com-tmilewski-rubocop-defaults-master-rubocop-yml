@@ -1,6 +1,8 @@
 # see https://github.com/bbatsov/rubocop/blob/master/config/default.yml
 # for default configuration
 
+require: rubocop-rails
+
 AllCops:
   TargetRubyVersion: 2.4
   DisplayCopNames: true
@@ -12,10 +14,7 @@ AllCops:
 Rails:
   Enabled: true
 
-Documentation:
-  Enabled: false
-
-Metrics/LineLength:
+Layout/LineLength:
   Max: 125
   Exclude:
     - 'db/migrate/*'
@@ -48,7 +47,7 @@ Metrics/ClassLength:
   CountComments: false
   Max: 100
 
-Style/MultilineMethodCallIndentation:
+Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
 Style/FrozenStringLiteralComment:
